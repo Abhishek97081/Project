@@ -54,7 +54,8 @@ nav ul{
   font-family: 'Baloo Bhai 2', cursive;
 }
 .imgbox img{
-    display:none;
+    width: 0;
+    transition: width 1s ease-in-out;
 }
 .br-0{
     border-right: 0;
@@ -65,4 +66,18 @@ nav ul{
 .bb-0{
     border-bottom:0;
 
+}
+.info{
+    font-size: 25px;
+}
+@media screen and (max-width: 800px) {
+    .gameContainer{
+       flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+    }
+    .gameInfo h1{
+        font-size: 30px;
+    }
 }
